@@ -1,12 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    public AudioClip bounceSound;
+    
     private Rigidbody rigidbody;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PickUp(Transform t)
@@ -19,5 +24,10 @@ public class Obstacle : MonoBehaviour
     {
         transform.SetParent(null);
         rigidbody.useGravity = true;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        audioSource.PlayOneShot(bounceSound);
     }
 }
