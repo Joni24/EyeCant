@@ -27,6 +27,6 @@
      private void Spawn()
      {
          var go = Instantiate(eyePrefab, transform.position, Quaternion.identity);
-         go.transform.SetParent(this.transform);
+         go.transform.SetParent(null);
      }
  }
