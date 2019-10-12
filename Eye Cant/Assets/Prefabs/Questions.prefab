@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8915045115537351384}
   - component: {fileID: 8567772302687266537}
   - component: {fileID: 8080850150214904682}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: A3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 1039538197868780164}
   - component: {fileID: 8935956728054037456}
   - component: {fileID: 4190894316017694889}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: A2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 793434178048853591}
   - component: {fileID: 6566406682931585553}
   - component: {fileID: 7475138428483229525}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Question2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 6350864512431033156}
   - component: {fileID: 5359664457674924694}
   - component: {fileID: 4308266756248793517}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: A1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 6313007474212603322}
   - component: {fileID: 6313007474212603320}
   - component: {fileID: 6313007474212603323}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Question1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,13 +444,13 @@ GameObject:
   - component: {fileID: 6313007475647685249}
   - component: {fileID: 6313007475647685248}
   - component: {fileID: 6313007475647685251}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Questions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6313007475647685250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 2746490404484074657}
   - component: {fileID: 1087127988205721958}
   - component: {fileID: 7296413952458947069}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: A1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 7023733621586896766}
   - component: {fileID: 5750215884373707045}
   - component: {fileID: 3515653767101750936}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: A2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
