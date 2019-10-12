@@ -17,13 +17,13 @@ public class Obstacle : MonoBehaviour
     public void PickUp(Transform t)
     {
         transform.SetParent(t);
-        rigidbody.useGravity = false;
+        rigidbody.isKinematic = true;
     }
     
     public void Drop()
     {
         transform.SetParent(null);
-        rigidbody.useGravity = true;
+        rigidbody.isKinematic = false;
     }
 
     private void OnCollisionEnter(Collision other)
