@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -14,9 +15,22 @@ public class PlayerMovement : MonoBehaviour
     private const string OBSTACLE_TAG = "Obstacle";
     private Obstacle obstacle;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     // Update is called once per frame
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false; 
+            #endif
+        }
+        
         LookAround();
         Move();
         PickUp();
