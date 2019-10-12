@@ -9,7 +9,7 @@ public class Door : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (!_isDown)
+        if (!_isDown && !other.tag.Equals(PlayerMovement.OBSTACLE_TAG))
         {
             //questions.SetActive(true);
             animation.Play("MoveDown");

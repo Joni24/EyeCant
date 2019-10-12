@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Camera camera;
     [SerializeField] private Transform carryPosition;
 
-    private const string OBSTACLE_TAG = "Obstacle";
+    public const string OBSTACLE_TAG = "Obstacle";
     private Obstacle obstacle;
 
     private void Start()
