@@ -593,7 +593,7 @@ PrefabInstance:
     - target: {fileID: 7825792824041331210, guid: c815d27e1e9d4b4f4a1de501a1eab831,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.52
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7825792824041331210, guid: c815d27e1e9d4b4f4a1de501a1eab831,
         type: 3}
@@ -638,6 +638,21 @@ PrefabInstance:
     - target: {fileID: 7825792824041331210, guid: c815d27e1e9d4b4f4a1de501a1eab831,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825792824041331702, guid: c815d27e1e9d4b4f4a1de501a1eab831,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911866570532323188, guid: c815d27e1e9d4b4f4a1de501a1eab831,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911866570532323188, guid: c815d27e1e9d4b4f4a1de501a1eab831,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
