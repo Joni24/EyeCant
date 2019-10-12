@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         input.z = Input.GetAxis("Vertical");
 
         input = transform.TransformDirection(input);
+        input.y = -20 * Time.deltaTime;
 
         controller.Move(input * Time.deltaTime * movementSpeed);
     }
