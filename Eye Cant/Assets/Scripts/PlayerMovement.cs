@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -7,19 +8,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform cameraTransform = null;
     [SerializeField] private float movementSpeed = 100;
     [SerializeField] private float cameraRotationSpeed = 100;
-    
-    
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+    [SerializeField] private Camera camera;
+    [SerializeField] private Transform carryPosition;
+
+    private const string OBSTACLE_TAG = "Obstacle";
+    private Obstacle obstacle;
 
     // Update is called once per frame
     private void Update()
     {
         LookAround();
         Move();
+        PickUp();
     }
 
     private void Move()
@@ -41,5 +41,28 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0, vertical, 0);
         cameraTransform.Rotate(-horizontal, 0, 0);
+    }
+
+    private void PickUp()
+    {
+        if (Input.GetMouseButtonDown((int) MouseButton.LeftMouse)) {
+            RaycastHit hit;
+            var ray = camera.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, 10f)) {
+                Debug.DrawRay(ray.origin, ray.direction, Color.red, 1f);
+
+                if (hit.collider.tag.Equals(OBSTACLE_TAG)) {
+                    obstacle = hit.collider.GetComponent<Obstacle>();
+                    obstacle.PickUp(this.transform);
+                    obstacle.transform.position = carryPosition.position;
+                }
+            }
+        }
+        else if (Input.GetMouseButtonUp((int) MouseButton.LeftMouse)) {
+            if (obstacle != null) {
+                obstacle.Drop();
+            }
+        }
     }
 }

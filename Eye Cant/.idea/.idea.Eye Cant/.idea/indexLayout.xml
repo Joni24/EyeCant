@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ContentModelUserStore">
     <attachedFolders />
-<<<<<<< Updated upstream
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
@@ -16,13 +15,8 @@
     <explicitExcludes>
       <Path>.idea</Path>
       <Path>Library</Path>
-      <Path>Logs</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
-=======
-    <explicitIncludes />
-    <explicitExcludes />
->>>>>>> Stashed changes
   </component>
 </project>
