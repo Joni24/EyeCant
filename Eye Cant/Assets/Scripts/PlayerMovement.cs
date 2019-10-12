@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform cameraTransform = null;
     [SerializeField] private float movementSpeed = 100;
     [SerializeField] private float cameraRotationSpeed = 100;
-    
+
     
     // Start is called before the first frame update
     private void Start()
