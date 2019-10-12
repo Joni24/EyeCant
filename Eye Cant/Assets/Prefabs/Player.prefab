@@ -128,7 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 7825792824041331702}
   cameraTransform: {fileID: 8250657561245172429}
-  speedFactor: 0.1
+  movementSpeed: 10
+  cameraRotationSpeed: 150
 --- !u!1 &8532018281882353658
 GameObject:
   m_ObjectHideFlags: 0
